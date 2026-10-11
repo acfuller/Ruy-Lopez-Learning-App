@@ -12,7 +12,7 @@
     "test": "node --test tests/core.test.js",
     "test:ui": "node tests/ui.mjs",
     "desktop": "electron .",
-    "package": "npm run build && electron-builder --win dir"
+    "package": "node node_modules/electron/install.js && npm run build && electron-builder --win dir"
   },
   "dependencies": {
     "chess.js": "1.4.0"

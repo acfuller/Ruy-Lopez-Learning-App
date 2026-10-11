@@ -1,10 +1,30 @@
+# Dependencies and local secrets
 node_modules/
-dist/
-release/
 .env
 .env.*
-*.log
-.DS_Store
-Thumbs.db
-playwright-report/
-test-results/
+!.env.example
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Generated web and Windows desktop build outputs
+/dist/
+/release/
+/out/
+
+# Electron and local platform artifacts
+*.lnk
+*.asar
+
+# Research downloads and locally rendered screenshots
+/reference.html
+/reference.txt
+/tests/desktop.png
+/tests/mobile.png
+/tests/installation.json
+/tests/browser-results.json
+/tests/packaged-results.json
+/tests/audit.json
+
+# Local test browser/runtime profiles
+/tests/desktop-profile/
